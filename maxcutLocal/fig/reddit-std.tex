@@ -1,0 +1,88 @@
+% This file was created with tikzplotlib v0.10.1.
+\begin{tikzpicture}
+
+\definecolor{darkgray176}{RGB}{176,176,176}
+\definecolor{darkorange25512714}{RGB}{255,127,14}
+\definecolor{lightgray204}{RGB}{204,204,204}
+\definecolor{steelblue31119180}{RGB}{31,119,180}
+
+\begin{axis}[
+legend cell align={left},
+legend style={
+  fill opacity=0.8,
+  draw opacity=1,
+  text opacity=1,
+  at={(0.97,0.03)},
+  anchor=south east,
+  draw=lightgray204
+},
+tick align=outside,
+tick pos=left,
+x grid style={darkgray176},
+xmin=0.09, xmax=0.31,
+xtick style={color=black},
+y grid style={darkgray176},
+ymin=0.430448296222825, ymax=2.19888271007812,
+ytick style={color=black}
+]
+\path [draw=steelblue31119180]
+(axis cs:0.1,0.510831678670793)
+--(axis cs:0.1,0.606059357480007);
+
+\path [draw=steelblue31119180]
+(axis cs:0.15,0.754677720970562)
+--(axis cs:0.15,0.846279790816491);
+
+\path [draw=steelblue31119180]
+(axis cs:0.2,0.904936455325363)
+--(axis cs:0.2,1.01799008887194);
+
+\path [draw=steelblue31119180]
+(axis cs:0.25,1.09661123466491)
+--(axis cs:0.25,1.20324141406361);
+
+\path [draw=steelblue31119180]
+(axis cs:0.3,1.24390752807711)
+--(axis cs:0.3,1.3380077984698);
+
+\path [draw=darkorange25512714]
+(axis cs:0.1,1.77668415974194)
+--(axis cs:0.1,1.77668415974194);
+
+\path [draw=darkorange25512714]
+(axis cs:0.15,1.99124026625854)
+--(axis cs:0.15,1.99124026625854);
+
+\path [draw=darkorange25512714]
+(axis cs:0.2,2.08497523349452)
+--(axis cs:0.2,2.08763600046353);
+
+\path [draw=darkorange25512714]
+(axis cs:0.25,2.11693334635049)
+--(axis cs:0.25,2.11849932763016);
+
+\path [draw=darkorange25512714]
+(axis cs:0.3,2.10524764752704)
+--(axis cs:0.3,2.10737626769005);
+
+\addplot [steelblue31119180]
+table {%
+0.1 0.5584455180754
+0.15 0.800478755893527
+0.2 0.961463272098653
+0.25 1.14992632436426
+0.3 1.29095766327346
+};
+\addlegendentry{Rnd-L}
+\addplot [darkorange25512714]
+table {%
+0.1 1.77668415974194
+0.15 1.99124026625854
+0.2 2.08630561697903
+0.25 2.11771633699032
+0.3 2.10631195760855
+};
+\addlegendentry{SDP-L}
+\end{axis}
+
+\end{tikzpicture}

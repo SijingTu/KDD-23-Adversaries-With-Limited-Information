@@ -1,0 +1,92 @@
+% This file was created with tikzplotlib v0.10.1.
+\begin{tikzpicture}
+
+\definecolor{crimson2143940}{RGB}{214,39,40}
+\definecolor{darkgray176}{RGB}{176,176,176}
+\definecolor{darkorange25512714}{RGB}{255,127,14}
+\definecolor{forestgreen4416044}{RGB}{44,160,44}
+\definecolor{lightgray204}{RGB}{204,204,204}
+\definecolor{mediumpurple148103189}{RGB}{148,103,189}
+\definecolor{orchid227119194}{RGB}{227,119,194}
+\definecolor{sienna1408675}{RGB}{140,86,75}
+\definecolor{steelblue31119180}{RGB}{31,119,180}
+
+\begin{axis}[
+legend cell align={left},
+legend style={fill opacity=0.8, draw opacity=1, text opacity=1, at={(1.01,1.04)}, draw=lightgray204},
+tick align=outside,
+tick pos=left,
+x grid style={darkgray176},
+xmin=0.004, xmax=0.026,
+xtick style={color=black},
+xticklabel style={rotate=20.0},
+y grid style={darkgray176},
+ymin=-0.675280996186033, ymax=14.2989788674465,
+ytick style={color=black}
+]
+\addplot [steelblue31119180]
+table {%
+0.005 3.9874947916712
+0.01 7.13327654018203
+0.015 9.74499044816217
+0.02 11.8418853850801
+0.025 13.6183306918269
+};
+\addlegendentry{AG-F}
+\addplot [darkorange25512714]
+table {%
+0.005 3.97518696023417
+0.01 7.10607715125809
+0.015 9.58320763758558
+0.02 11.63210164196
+0.025 13.3782795077904
+};
+\addlegendentry{NAG-F}
+\addplot [forestgreen4416044]
+table {%
+0.005 0.00536717943362901
+0.01 0.0153341630436092
+0.015 0.0292449865325686
+0.02 0.0475296491331975
+0.025 0.0705519035754453
+};
+\addlegendentry{Deg-L}
+\addplot [crimson2143940]
+table {%
+0.005 0.241205178880549
+0.01 0.501974908197518
+0.015 0.687657301991045
+0.02 0.969833665636745
+0.025 1.19377394152289
+};
+\addlegendentry{Rnd-L}
+\addplot [mediumpurple148103189]
+table {%
+0.005 0.00581148487149553
+0.01 0.0161469534712253
+0.015 0.0302663582299915
+0.02 0.0480935083319578
+0.025 0.0695453693581029
+};
+\addlegendentry{IM-L}
+\addplot [sienna1408675]
+table {%
+0.005 3.96661557307952
+0.01 7.1199764896895
+0.015 9.72823041372743
+0.02 11.8240902508792
+0.025 13.6117378827996
+};
+\addlegendentry{AG-L}
+\addplot [orchid227119194]
+table {%
+0.005 3.95665372584181
+0.01 7.0982852271666
+0.015 9.57305524222064
+0.02 11.6402092144684
+0.025 13.3682108734728
+};
+\addlegendentry{NAG-L}
+\end{axis}
+
+\end{tikzpicture}
