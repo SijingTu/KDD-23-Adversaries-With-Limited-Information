@@ -64,7 +64,7 @@ if data_type == 2:
     df = pd.DataFrame()
     np.random.seed(1024)
     [n, m, s, L, k_0, d] = extract_SBM_graph_parameters_and_matrices()
-    create_edge_list(L, "edgelist/"+'sbm' + ".txt")
+    create_edge_list(L, "../InfluenceMax/.in/"+'sbm' + ".txt")
     dict_for_graph = calculate_graph_metrics_and_pack_in_dict(n, m, s, L, k_0, d, 'sbm', 1)
     df = df.append(dict_for_graph, ignore_index = True)
 
